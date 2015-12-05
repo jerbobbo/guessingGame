@@ -1,0 +1,40 @@
+html {
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+body {
+	background-color: #E6E6E6
+}
+h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+h4 {
+	font-size: 14px
+}
+
+.container {
+	background-color: #fff;
+	margin: auto;
+	width: 40%;
+	border:3px solid #666;
+    padding: 10px;
+	text-align: center;
+}
+
+.form-control {
+	padding: 8px;
+	border:1px solid #666;
+}
+
+.btn-default {
+	padding: 8px;
+}
+
+.btn-primary {
+	padding: 8px;
+	background-color: #81BEF7;
+	font-weight: 600;
+	font-size: 12px
+}
