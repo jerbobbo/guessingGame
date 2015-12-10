@@ -29,7 +29,7 @@ h4 {
 	display: none;
 }
 
-.messages .status {
+.messages.status {
 	text-align: center;
 	vertical-align: middle;
 }
@@ -61,12 +61,24 @@ button {
 	border: 1px solid #666;
 }
 
+
+:focus {
+	outline: none;
+}
+
 .btn-default {
 	background-color: cornsilk;
+}
+
+.btn-default.highlighted {
+	background-color: #DCDEFF;
 }
 
 .btn-primary {
 	background-color: #81BEF7;
 	font-weight: 600;
-	
+}
+
+.btn-primary.highlighted {
+	background-color: #E1FFDC;
 }

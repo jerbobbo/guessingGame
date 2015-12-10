@@ -10,6 +10,15 @@ $(document).ready(function() {
 		$(".messages").slideDown();
 		playersGuessSubmission();
 	});
+
+	$("button").on("mouseover", function() {
+		$(this).addClass("highlighted");
+	});
+
+	$("button").on("mouseout", function() {
+		$(this).removeClass("highlighted");
+	});
+
 });
 
 
