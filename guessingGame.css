@@ -23,6 +23,20 @@ h4 {
 	text-align: center;
 }
 
+.messages {
+	height: 40px;
+}
+
+.messages .status {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.form-style {
+	width: 50%;
+	margin: auto;
+}
+
 .form-control {
 	padding: 8px;
 	border:1px solid #666;
