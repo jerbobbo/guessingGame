@@ -7,6 +7,7 @@ var prevGuesses = [];
 
 $(document).ready(function() {
 	$("#submit").on("click", function() {
+		$(".messages").slideDown();
 		playersGuessSubmission();
 	});
 });

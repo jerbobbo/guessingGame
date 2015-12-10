@@ -10,17 +10,19 @@
 	<body>
 		<div class="container">
 			
-			<h3>Guess The Number</h3>
-		
-			<div class="form-style">
-				<div>
-					<input type="text" id="guess" class="form-control" placeholder="Input Number 1-100" aria-describedby="guess-the-number">
-					
-					<button class="btn-primary" type="button" id="submit">Submit Guess!</button>
-				</div>
 			
 		
-	
+			<div class="form-style">
+				<h3>Guess The Number</h3>
+				<ul class="btn-row">
+					<li>
+						<input type="text" id="guess" class="input-box" placeholder="Input Number 1-100" aria-describedby="guess-the-number">
+					</li>
+					
+					<li>
+						<button class="btn-primary" type="button" id="submit">Submit Guess!</button>
+					</li>
+				</ul>
 		
 				<div class="messages">
 					<h5 id="status" class="status"></h5>
@@ -28,10 +30,16 @@
 				</div>
 			
 			
-				<div class="col-md-3 col-md-offset-4">
-					<button class="btn-default" type="button" id="playAgain">Play Again</button>
-					<button class="btn-default" type="button" id="giveUp">I Give Up</button>
-				</div>
+				<ul class="btn-row">
+					<li>
+						<button class="btn-default" type="button" id="playAgain">Play Again</button>
+					</li>
+
+					<li>
+						<button class="btn-default" type="button" id="giveUp">I Give Up</button>
+					</li>
+				</ul>
+				
 		
 
 				<div class="col-md-3 col-md-offset-4">

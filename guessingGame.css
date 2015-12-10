@@ -9,9 +9,10 @@ body {
 h3 {
 	font-size: 20px;
 	text-transform: uppercase;
+	text-align: center;
 }
 h4 {
-	font-size: 14px
+	font-size: 14px;
 }
 
 .container {
@@ -19,12 +20,13 @@ h4 {
 	margin: auto;
 	width: 40%;
 	border:3px solid #666;
+	border-radius: 10px;
     padding: 10px;
 	text-align: center;
 }
 
 .messages {
-	height: 40px;
+	display: none;
 }
 
 .messages .status {
@@ -37,18 +39,34 @@ h4 {
 	margin: auto;
 }
 
-.form-control {
+.input-box {
+	font-size: 12px;
 	padding: 8px;
-	border:1px solid #666;
+	border: 1px solid #666;
+	border-radius: 8px;
+}
+
+.btn-row {
+	padding-left: 0px;
+}
+
+.btn-row li {
+	display: inline;
+}
+
+button {
+	padding: 8px;
+	border-radius: 8px;
+	font-size: 12px;
+	border: 1px solid #666;
 }
 
 .btn-default {
-	padding: 8px;
+	background-color: cornsilk;
 }
 
 .btn-primary {
-	padding: 8px;
 	background-color: #81BEF7;
 	font-weight: 600;
-	font-size: 12px
+	
 }
