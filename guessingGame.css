@@ -13,6 +13,11 @@ h3 {
 }
 h4 {
 	font-size: 14px;
+	color: #216DF5;
+}
+
+h5 {
+	font-size: 14px;
 }
 
 .container {
@@ -61,6 +66,39 @@ button {
 	border: 1px solid #666;
 }
 
+.status.winner {
+	font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #EC4949;
+    border: 2px solid #EC4949;
+    border-radius: 10px;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.status.loser {
+	font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #005B78;
+    border: 2px solid #005B78;
+    border-radius: 10px;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.photo {
+	display: none;
+	-webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
 
 :focus {
 	outline: none;

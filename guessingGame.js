@@ -103,7 +103,8 @@ game.prototype.checkGuess = function(){
 	// add code here
 	var statusText = "";
 	if (this.getGuess() === this.getWinningNum()) {
-		statusText = "You won!";
+		statusText = "YOU WON!";
+		$('#status').addClass('winner');
 	}
 	else {
 		for (var i = 0; i < this.getPrevious().length; i++) {
@@ -113,8 +114,16 @@ game.prototype.checkGuess = function(){
 		}
 		if (statusText === "") {
 			this.addGuess(this.getGuess());
-			this.remainingMessage("You have " + this.guessesRemaining() + " more guess(es)...")
-			statusText = this.guessMessage();
+
+			if (this.guessesRemaining() <= 0) {
+				statusText = "YOU LOST!";
+				$('#status').addClass('loser');
+				$('#baby').show();
+			}
+			else {
+				statusText = this.guessMessage();
+			}
+			this.remainingMessage("You have " + this.guessesRemaining() + " more guess(es)...");
 		}
 	}
 
@@ -205,6 +214,12 @@ $(document).ready(function() {
 		guessGame.playersGuessSubmission();
 	});
 
+	$("#guess").on("keypress", function(e) {
+		if (e.which === 13) {
+			guessGame.playersGuessSubmission();
+		}
+	});
+
 	$("#hint").on("click", function() {
 		$(".messages").slideDown();
 		guessGame.provideHint();
@@ -215,6 +230,9 @@ $(document).ready(function() {
 		$('.messages').slideUp();
 		$('#guess').val('');
 		$('#numTurns').text('You have ' + guessGame.maxTurns() + ' more guesses...');
+		$('#status').removeClass('winner');
+		$('#status').removeClass('loser');
+		$('#baby').hide();
 	});
 
 	$("button").on("mouseover", function() {
